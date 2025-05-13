@@ -62,7 +62,7 @@ struct SingleVideoPlayerView: View {
 
     private func addLoopOrNextNotification(for item: AVPlayerItem) {
         NotificationCenter.default.addObserver(forName: .AVPlayerItemDidPlayToEndTime, object: item, queue: .main) { _ in
-            onVideoEnded?() // Notify parent (ReelsView)
+            onVideoEnded?()
         }
     }
 }
@@ -94,7 +94,7 @@ class PlayerUIView: UIView {
     }
 
     func configure(with player: AVPlayer) {
-        layer.sublayers?.forEach { $0.removeFromSuperlayer() } // clear old layers
+        layer.sublayers?.forEach { $0.removeFromSuperlayer() }
         let layer = AVPlayerLayer(player: player)
         layer.videoGravity = .resizeAspectFill
         layer.frame = self.bounds

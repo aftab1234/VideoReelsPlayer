@@ -36,7 +36,6 @@ class PlayerVM: ObservableObject {
     }
 
     private func observeItemReadyStatus() {
-        // Observe when the player's currentItem becomes ready to play
         statusObserver = player.observe(\.currentItem?.status, options: [.new, .initial]) { [weak self] player, change in
             guard let self = self else { return }
 
