@@ -23,8 +23,5 @@ A project like tik tok and instagram reels
   - VideoPlayerVM is model view model class for Reels View
   - PlayerVM is view model class of SingleVideoPlayerView
 
----
-
-## 📂 Project Structure
 
 
