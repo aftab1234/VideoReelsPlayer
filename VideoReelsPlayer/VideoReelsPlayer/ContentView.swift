@@ -2,7 +2,7 @@
 //  ContentView.swift
 //  VideoReelsPlayer
 //
-//  Created by MOHAMMAD AFTAB SABIR on 13/05/25.
+//  Created by MOHAMMAD AFTAB SABIR on 12/05/25.
 //
 
 import SwiftUI
@@ -10,10 +10,7 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            HomeView()
         }
         .padding()
     }
